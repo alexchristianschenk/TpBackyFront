@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap'); /* Tipografía deportiva */
+
+.header {
+    background-color: rgb(0, 0, 0);
+    color: rgb(4, 107, 9);
+    width: 100vw;
+    height: 10%;
+    font-size: 60px; /* Tamaño de fuente más grande */
+    font-family: 'Russo One', sans-serif; /* Tipografía deportiva */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente el texto */
+    margin-top: 15px;
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateX(-100%); /* Empieza fuera de la pantalla por la izquierda */
+    animation: slideInLeft 1.5s ease-out forwards; /* Animación deslizante */
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes dropIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.titulo2 {
+    color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+    opacity: 0; /* Inicialmente invisible */
+    animation: fadeIn 2s ease-in-out forwards; /* Animación para que aparezca */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición para el hover */
+}
+
+.titulo2:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    color: rgb(255, 193, 7); /* Cambia a un color llamativo */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.barra-nav {
+    width: 100vw;
+    height: 10%;
+    background-color: rgb(4, 107, 9);
+
+}
+
+  

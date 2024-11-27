@@ -1,0 +1,70 @@
+.eventos {
+    background-color: rgba(3, 27, 3, 0.863); /* Fondo oscuro y sutil */
+    color: azure;
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Borde suave */
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    gap: 1.5rem; /* Mayor espacio entre elementos */
+    border-radius: 8px; /* Bordes redondeados para un look más moderno */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eventos:hover {
+    transform: translateY(-5px); /* Efecto de elevar al pasar el mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el mouse */
+}
+
+.eventos img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eventos img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Agrega sombra en hover */
+}
+
+.texto {
+    text-align: left;
+    font-size: 1.1rem; /* Aumento de tamaño de fuente */
+    line-height: 1.6; /* Mayor espaciado entre líneas */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil para resaltar el texto */
+    padding: 15px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra sutil para los textos */
+    transition: box-shadow 0.3s ease;
+}
+
+.texto:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al pasar el mouse */
+}
+
+.contactos {
+    margin-right: 10px;
+}
+
+.contenedor-contactos {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (min-width: 577px) {
+    .contenedor-total {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 576px) {
+    .contenedor-contactos {
+        display: block;
+        width: 80vw;
+    }
+}

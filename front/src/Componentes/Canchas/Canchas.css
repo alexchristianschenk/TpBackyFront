@@ -1,0 +1,25 @@
+.canchas-titulos {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: Arial, sans-serif; /* Mantengo la fuente original */
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(-100%); /* Empieza fuera de la pantalla arriba */
+    animation: fallIn 1.5s ease-out forwards; /* Animación de caída */
+}
+
+/* Animación para el efecto de caída desde arriba */
+@keyframes fallIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,25 @@
+body{
+  overflow-x: hidden;
+}
+.contenedor-total{
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  background-image: url(./assets/fondo1.jpg);
+  background-repeat: repeat;
+  background-size: auto;
+  overflow-x: hidden;
+} 
+ @media(min-width:577px){
+  .contenedor-total{
+    width: 100vw;
+    overflow-x: hidden;
+  }
+ }
+ @media(max-width: 576px){
+ .contenedor-total{
+ width: 100vw;
+ display: block;
+ overflow-x: hidden;
+ } 
+ }

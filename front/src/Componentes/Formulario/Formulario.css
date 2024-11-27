@@ -1,0 +1,160 @@
+
+.container {
+  display: flex;
+  gap: 20px; /* Añadido espacio entre elementos */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #1a2a1b; /* Un verde oscuro y moderno */
+  color: #f0f0f0; /* Blanco suave */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 25vw;
+  transition: transform 0.3s ease; /* Efecto de animación */
+}
+
+.form:hover {
+  transform: translateY(-5px); /* Efecto sutil al pasar el mouse */
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.input {
+  width: 100%;
+  max-width: 250px;
+  padding: 12px;
+  border: 1px solid #4e8b50; /* Verde más claro */
+  border-radius: 8px;
+  background-color: #f0f0f0; /* Fondo claro */
+  color: #333;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.input:focus {
+  border-color: #64b61f; /* Resalta el borde cuando el campo está en foco */
+  outline: none;
+}
+
+.button {
+  padding: 12px 20px;
+  background-color: #64b61f; /* Un verde brillante */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #4e8b50;
+  transform: translateY(-2px);
+}
+
+.deleteButton {
+  padding: 10px 15px;
+  background-color: #e02424; /* Rojo brillante */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.deleteButton:hover {
+  background-color: #c21f1f;
+  transform: translateY(-2px);
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 450px;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #1a2a1b;
+  color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.dataContainer:hover {
+  transform: translateY(-5px);
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.dataItem {
+  margin-bottom: 12px;
+  padding: 15px;
+  border: 1px solid #4e8b50;
+  border-radius: 8px;
+  width: 100%;
+  background-color: #080000; /* Fondo oscuro para resaltar el texto */
+  position: relative;
+  color: #f0f0f0;
+  transition: transform 0.2s ease;
+}
+
+.dataItem:hover {
+  transform: scale(1.05); /* Agranda ligeramente al pasar el mouse */
+}
+
+.dataText {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 778px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .form {
+    margin-right: 20px;
+  }
+
+  .dataContainer {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form,
+  .dataContainer {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .button,
+  .deleteButton {
+    width: 100%;
+  }
+}
+
+

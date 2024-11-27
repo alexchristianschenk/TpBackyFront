@@ -1,0 +1,28 @@
+.carrusel {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.imgjugador {
+    width: 100%;
+    height: auto;
+}
+
+@media(max-width: 576px) {
+    .seccion {
+        width: 100vw;
+    }
+
+    .imgjugador {
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+@media(min-width:577px) {
+    .seccion {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+}
